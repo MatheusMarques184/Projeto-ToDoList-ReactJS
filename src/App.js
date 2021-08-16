@@ -1,25 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
+import Main from './components/Main';
 import './App.css';
 
-function App() {
+function app() { // por padrao so pode ser retornado 1 elemento com o maio nivel hieranquico, como solucao pode ser usado um elemento vazio <>
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Main />
+    </>
   );
 }
-
-export default App;
+export default app;
